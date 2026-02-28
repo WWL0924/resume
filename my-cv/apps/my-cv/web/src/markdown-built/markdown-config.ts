@@ -1,0 +1,17 @@
+import html0 from './index.html';
+import html1 from './en/01-experience/index.html';
+import html2 from './en/02-projects/index.html';
+import html3 from './en/03-skills/index.html';
+import html4 from './en/04-education/index.html';
+import html5 from './en/index.html';
+import html6 from './zh/index.html';
+
+export const markdownConfig: Record<string, { html: string; data: any; headings: any[] }> = {
+  '/': { html: html0, data: {"lang":[{"title":"English","id":"en"},{"title":"简体中文","id":"zh"}]}, headings: [] },
+  '/en/01-experience/index': { html: html1, data: {"title":"Experience","order":1}, headings: [{"level":2,"text":"Senior Frontend Engineer | TechSolutions NZ Ltd.","id":"senior-frontend-engineer-techsolutions-nz-ltd"},{"level":2,"text":"Full Stack Developer | Creative Web Agency","id":"full-stack-developer-creative-web-agency"},{"level":2,"text":"Frontend Intern | Digital Innovation Studio","id":"frontend-intern-digital-innovation-studio"}] },
+  '/en/02-projects/index': { html: html2, data: {"title":"Projects","order":2}, headings: [{"level":2,"text":"Lupine.js (Open Source)","id":"lupine-js-https-github-com-uuware-lupine-js-open-source"},{"level":2,"text":"Personal Blog Generator","id":"personal-blog-generator"},{"level":2,"text":"Real-time Collaborative Editor","id":"real-time-collaborative-editor"}] },
+  '/en/03-skills/index': { html: html3, data: {"title":"Skills","order":3}, headings: [{"level":2,"text":"Frontend & Core","id":"frontend-core"},{"level":2,"text":"Backend & Database","id":"backend-database"},{"level":2,"text":"DevOps & Tools","id":"devops-tools"},{"level":2,"text":"General","id":"general"}] },
+  '/en/04-education/index': { html: html4, data: {"title":"Education","order":4}, headings: [{"level":2,"text":"University of Auckland","id":"university-of-auckland"}] },
+  '/en/index': { html: html5, data: {"title":"CV","order":0,"github-title":"View on GitHub","github-link":"https://github.com/uuware/lupine.js","sidebar":[{"type":"group","text":"Details","level":0},{"type":"link","text":"Experience","link":"/en/01-experience/index","level":1},{"type":"link","text":"Projects","link":"/en/02-projects/index","level":1},{"type":"link","text":"Skills","link":"/en/03-skills/index","level":1},{"type":"link","text":"Education","link":"/en/04-education/index","level":1}]}, headings: [{"level":2,"text":"Personal Statement","id":"personal-statement"},{"level":2,"text":"Career Objectives","id":"career-objectives"}] },
+  '/zh/index': { html: html6, data: {}, headings: [{"level":2,"text":"教育背景","id":"教育背景"},{"level":2,"text":"实习经历","id":"实习经历"},{"level":3,"text":"青岛慧志信息技术有限公司 · 前端开发实习生 · 青岛 · 2025-01 - 2025-04","id":"青岛慧志信息技术有限公司-前端开发实习生-青岛-2025-01-2025-04"},{"level":2,"text":"项目经历","id":"项目经历"},{"level":3,"text":"社区宠物狗管理系统","id":"社区宠物狗管理系统"},{"level":3,"text":"2048游戏（原生JS实现) https://wwl0924.github.io/2048/","id":"2048游戏-原生js实现-https-wwl0924-github-io-2048-https-wwl0924-github-io-2048"},{"level":3,"text":"贪吃蛇游戏（原生JS实现）https://wwl0924.github.io/snake/","id":"贪吃蛇游戏-原生js实现-https-wwl0924-github-io-snake-https-wwl0924-github-io-snake"},{"level":3,"text":"俄罗斯方块（原生JS实现) https://wwl0924.github.io/Tetris/","id":"俄罗斯方块-原生js实现-https-wwl0924-github-io-tetris-https-wwl0924-github-io-tetris"},{"level":3,"text":"豆瓣电影Top10数据可视化 https://wwl0924.github.io/Web-crawler/","id":"豆瓣电影top10数据可视化-https-wwl0924-github-io-web-crawler-https-wwl0924-github-io-web-crawler"},{"level":2,"text":"专业技能","id":"专业技能"}] },
+};
