@@ -24,7 +24,7 @@
     "start-dev": "node dist/server_root/server/app-loader.js --env=.env.development",
     "start-production": "node dist/server_root/server/app-loader.js --env=.env.production",
     "format": "prettier --write \"**/*.{js,json,css,scss,md,html,yaml,ts,jsx,tsx}\"",
-    "cp-docs": "node dev/cp-folder.js dist/server_root/my-cv_web/github-pj-name docs"
+    "cp-docs": "node dev/cp-folder.js dist/server_root/my-cv_web/resume docs"
   },
   "dependencies": {
     "lupine.api": "^1.1.79",

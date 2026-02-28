@@ -24,10 +24,10 @@ bindAppGlobalStyle('comm-css', baseCss, false, true);
 setDefaultPageTitle('Doc Starter');
 
 bindPressData(markdownConfig);
-setPressSubDir('/github-pj-name');
+setPressSubDir('/resume');
 
 const pageRouter = new PageRouter();
-pageRouter.setSubDir('/github-pj-name');
+pageRouter.setSubDir('/resume');
 pageRouter.use('*', PressPage);
 
 bindRouter(pageRouter);

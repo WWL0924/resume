@@ -11,9 +11,9 @@
       "outdir": "/"
     },
     {
-      "index": "web/github-pj-name/index.tsx",
-      "html": "web/github-pj-name/index.html",
-      "outdir": "/github-pj-name"
+      "index": "web/resume/index.tsx",
+      "html": "web/resume/index.html",
+      "outdir": "/resume"
     }
   ],
   "apiEntryPoint": "api/src/index.ts",
@@ -28,8 +28,8 @@
     },
     {
       "type": "web",
-      "from": "web/github-pj-name/404.html",
-      "to": "github-pj-name/404.html"
+      "from": "web/resume/404.html",
+      "to": "resume/404.html"
     },
     {
       "type": "data",
